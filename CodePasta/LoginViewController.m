@@ -26,16 +26,6 @@
     
     [self.view addGestureRecognizer:tapGesture];
     
-    /// Using NSUserDefaults to store username and pwd strings locally
-    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
-    
-    if(![defaults boolForKey: USER_DEFAULTS_USER_REGISTERED]){
-        NSLog(@"user is not registered");
-    
-    }else{
-        NSLog(@"user is registered");
-    }
-    
     
 }
 
@@ -59,10 +49,16 @@
     
     [PFUser logInWithUsernameInBackground:self.userNameTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
         if (user) {
-            //Login Successful
-            [self performSegueWithIdentifier: SEGUE_FROM_LOGIN_TO_TAB_BAR_CONTROLLER sender:self];
+            if(self.presentingViewController == nil){
+                self.navigationItem.hidesBackButton = YES;
+                [self performSegueWithIdentifier: SEGUE_FROM_LOGIN_TO_TAB_BAR_CONTROLLER sender:self];
+            }else{
+                [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+            }
+
         } else {
             //Something bad has ocurred
+            //TODO: analyze error response code to identify the error.
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
             UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
             [errorAlertView show];

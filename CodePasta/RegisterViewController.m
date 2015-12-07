@@ -9,6 +9,7 @@
 #import "RegisterViewController.h"
 #import <Parse/Parse.h>
 #import "Constants.h"
+#import "User.h"
 
 @interface RegisterViewController ()
 
@@ -59,24 +60,63 @@
  */
 - (IBAction)registerBtnClicked:(UIButton *)sender {
     
+    if([self validatePasswordFields]){
     
-    PFUser *user = [PFUser user];
-    
-    user.username = self.usernameTextField.text;
-    user.password = self.passwordTextField.text;
-    
-    // registers a new user in a closure and perform the segue on success
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            //The registration was successful 
-            [self performSegueWithIdentifier: SEGUE_FROM_REGISTER_TO_TAB_BAR_CONTROLLER sender:self];
-            
-        } else {
-            //Something bad has occurred
-            NSString *errorString = [[error userInfo] objectForKey:@"error"];
-            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-            [errorAlertView show];
-        }
-    }];
+        //PFUser *user = [PFUser user];
+        User* user = [User object];
+        
+        user.username = self.usernameTextField.text;
+        user.password = self.passwordTextField.text;
+        
+        
+        
+        // registers a new user in a closure and perform the segue on success
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (!error) {
+                //The registration was successful 
+                [self performSegueWithIdentifier: SEGUE_FROM_REGISTER_TO_TAB_BAR_CONTROLLER sender:self];
+                
+            } else {
+                //Something bad has occurred
+                NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                [errorAlertView show];
+            }
+        }];
+    }
 }
+
+/**
+ *  checks if both password fields match and that password.length > 6
+ *
+ *  @return BOOL
+ */
+- (BOOL) validatePasswordFields{
+    
+    if(![self.passwordTextField.text isEqualToString:self.repasswordTextField.text]){
+        
+        UIAlertView* errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Password fields donot match. Please retype your password" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [errorAlertView show];
+        return NO;
+        
+        
+    }else if(self.usernameTextField.text.length > 0 && self.passwordTextField.text.length < 6){
+        
+        UIAlertView* errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Passwords should be at least 6 charachters long." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        [errorAlertView show];
+        
+        return NO;
+        
+    }else{
+        
+        return YES;
+    }
+}
+
+- (IBAction)loginBtnClicked:(UIButton *)sender {
+    
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 @end

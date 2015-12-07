@@ -7,12 +7,23 @@
 //
 #import <Foundation/Foundation.h>
 
-//NSUserDefaults constants
-extern NSString* const USER_DEFAULTS_USER_REGISTERED;
-extern NSString* const USER_DEFAULTS_UERNAME;
-extern NSString* const USER_DEFAULTS_PASSWORD;
 
 //Segues
+// TODO: Update viewcontroller names
 extern NSString* const SEGUE_FROM_REGISTER_TO_TAB_BAR_CONTROLLER;
 extern NSString* const SEGUE_FROM_LOGIN_TO_TAB_BAR_CONTROLLER;
+extern NSString* const SEGUE_FROM_SECOND_VIEW_CONTROLLER_TO_LOGIN;
+extern NSString* const SEGUE_FROM_SECOND_VIEW_CONTROLLER_TO_CODE;
 
+//Identifiers
+extern NSString* const LOGIN_VIEW_CONTROLLER_IDENTIFIER;
+extern NSString* const PASTA_CELL_IDENTIFIER;
+extern NSString* const LOADING_CELL_IDENTIFIER;
+
+//Views
+extern NSString* const MAIN_STORYBOARD;
+extern NSString* const PASTA_CELL_NIB;
+extern NSString* const LOADING_CELL_NIB;
+
+
+extern NSString* const GITHUB_BASE_URL_STRING;

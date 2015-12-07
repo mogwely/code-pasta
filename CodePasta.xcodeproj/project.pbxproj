@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03583C3FBB73D2DE42BE29C3 /* libPods-CodePasta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B9A3FBCB9291FE676B5344 /* libPods-CodePasta.a */; };
+		8E156E671BDD328C0059F3FF /* PastaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E156E661BDD328C0059F3FF /* PastaCell.xib */; };
+		8E290CF41BD96A8C00A68DE3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E290CF31BD96A8C00A68DE3 /* Constants.m */; };
+		8E290CF71BD9A26B00A68DE3 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E290CF61BD9A26B00A68DE3 /* RegisterViewController.m */; };
+		8E4161221BDBF49F000F48D9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4161211BDBF49F000F48D9 /* User.m */; };
+		8E4161251BDBF5D2000F48D9 /* Pasta.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4161241BDBF5D2000F48D9 /* Pasta.m */; };
+		8E4A6A821BD9F433006C794A /* GithubAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A6A811BD9F433006C794A /* GithubAPIClient.m */; };
 		8EC4019F1BD94E2D00E1686F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC4019E1BD94E2D00E1686F /* main.m */; };
 		8EC401A21BD94E2D00E1686F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC401A11BD94E2D00E1686F /* AppDelegate.m */; };
 		8EC401A51BD94E2D00E1686F /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC401A41BD94E2D00E1686F /* FirstViewController.m */; };
-		8EC401A81BD94E2D00E1686F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC401A71BD94E2D00E1686F /* SecondViewController.m */; };
-		8EC401AB1BD94E2D00E1686F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC401A91BD94E2D00E1686F /* Main.storyboard */; };
+		8EC401AB1BD94E2D00E1686F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC401A91BD94E2D00E1686F /* Storyboard.storyboard */; };
 		8EC401AD1BD94E2D00E1686F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC401AC1BD94E2D00E1686F /* Images.xcassets */; };
 		8EC401B01BD94E2D00E1686F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC401AE1BD94E2D00E1686F /* LaunchScreen.xib */; };
 		8EC401BC1BD94E2D00E1686F /* CodePastaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC401BB1BD94E2D00E1686F /* CodePastaTests.m */; };
+		8EC401C71BD9514500E1686F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC401C61BD9514500E1686F /* LoginViewController.m */; };
+		8ED8ECFE1BDCA7C700A99A14 /* PushNoAnimationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8ECFD1BDCA7C700A99A14 /* PushNoAnimationSegue.m */; };
+		8EDC2A311BDD497300AB138C /* PastaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC2A301BDD497300AB138C /* PastaCell.m */; };
+		8EDC2A331BDD5B5F00AB138C /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDC2A321BDD5B5F00AB138C /* LoadingCell.xib */; };
+		8EDC2A351BDD940600AB138C /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC2A341BDD940600AB138C /* SecondViewController.m */; };
+		8EDC2A381BDDAA1100AB138C /* CodeFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC2A371BDDAA1100AB138C /* CodeFileViewController.m */; };
+		8EDC2A3B1BDE2CAD00AB138C /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC2A3A1BDE2CAD00AB138C /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10B9A3FBCB9291FE676B5344 /* libPods-CodePasta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CodePasta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B6D59670A31097114525FF /* Pods-CodePasta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePasta.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodePasta/Pods-CodePasta.release.xcconfig"; sourceTree = "<group>"; };
+		8E156E661BDD328C0059F3FF /* PastaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PastaCell.xib; sourceTree = "<group>"; };
+		8E290CF21BD96A6B00A68DE3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		8E290CF31BD96A8C00A68DE3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		8E290CF51BD9A26B00A68DE3 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		8E290CF61BD9A26B00A68DE3 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		8E4161201BDBF49F000F48D9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		8E4161211BDBF49F000F48D9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		8E4161231BDBF5D2000F48D9 /* Pasta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pasta.h; sourceTree = "<group>"; };
+		8E4161241BDBF5D2000F48D9 /* Pasta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pasta.m; sourceTree = "<group>"; };
+		8E4A6A801BD9F433006C794A /* GithubAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GithubAPIClient.h; sourceTree = "<group>"; };
+		8E4A6A811BD9F433006C794A /* GithubAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GithubAPIClient.m; sourceTree = "<group>"; };
 		8EC401991BD94E2D00E1686F /* CodePasta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodePasta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC4019D1BD94E2D00E1686F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC4019E1BD94E2D00E1686F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,13 +62,25 @@
 		8EC401A31BD94E2D00E1686F /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		8EC401A41BD94E2D00E1686F /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8EC401A61BD94E2D00E1686F /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		8EC401A71BD94E2D00E1686F /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		8EC401AA1BD94E2D00E1686F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8EC401AA1BD94E2D00E1686F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Storyboard.storyboard; sourceTree = "<group>"; };
 		8EC401AC1BD94E2D00E1686F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EC401AF1BD94E2D00E1686F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8EC401B51BD94E2D00E1686F /* CodePastaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodePastaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC401BA1BD94E2D00E1686F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EC401BB1BD94E2D00E1686F /* CodePastaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodePastaTests.m; sourceTree = "<group>"; };
+		8EC401C51BD9514500E1686F /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8EC401C61BD9514500E1686F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8ED8ECFC1BDCA7C700A99A14 /* PushNoAnimationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushNoAnimationSegue.h; sourceTree = "<group>"; };
+		8ED8ECFD1BDCA7C700A99A14 /* PushNoAnimationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushNoAnimationSegue.m; sourceTree = "<group>"; };
+		8EDC2A2F1BDD497300AB138C /* PastaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastaCell.h; sourceTree = "<group>"; };
+		8EDC2A301BDD497300AB138C /* PastaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastaCell.m; sourceTree = "<group>"; };
+		8EDC2A321BDD5B5F00AB138C /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		8EDC2A341BDD940600AB138C /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8EDC2A361BDDAA1100AB138C /* CodeFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeFileViewController.h; sourceTree = "<group>"; };
+		8EDC2A371BDDAA1100AB138C /* CodeFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeFileViewController.m; sourceTree = "<group>"; };
+		8EDC2A391BDE2CAD00AB138C /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		8EDC2A3A1BDE2CAD00AB138C /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		F94D10209165A3B63FC59A7E /* Pods-CodePasta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodePasta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodePasta/Pods-CodePasta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03583C3FBB73D2DE42BE29C3 /* libPods-CodePasta.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +102,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007BBBBE89B2B6F69A668290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F94D10209165A3B63FC59A7E /* Pods-CodePasta.debug.xcconfig */,
+				83B6D59670A31097114525FF /* Pods-CodePasta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E290CF01BD9650500A68DE3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8EC401A31BD94E2D00E1686F /* FirstViewController.h */,
+				8EC401A41BD94E2D00E1686F /* FirstViewController.m */,
+				8EC401A61BD94E2D00E1686F /* SecondViewController.h */,
+				8EDC2A341BDD940600AB138C /* SecondViewController.m */,
+				8EDC2A361BDDAA1100AB138C /* CodeFileViewController.h */,
+				8EDC2A371BDDAA1100AB138C /* CodeFileViewController.m */,
+				8EDC2A391BDE2CAD00AB138C /* PostViewController.h */,
+				8EDC2A3A1BDE2CAD00AB138C /* PostViewController.m */,
+				8EC401C51BD9514500E1686F /* LoginViewController.h */,
+				8EC401C61BD9514500E1686F /* LoginViewController.m */,
+				8E290CF51BD9A26B00A68DE3 /* RegisterViewController.h */,
+				8E290CF61BD9A26B00A68DE3 /* RegisterViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8E290CF11BD9657800A68DE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E290CF21BD96A6B00A68DE3 /* Constants.h */,
+				8E290CF31BD96A8C00A68DE3 /* Constants.m */,
+				8E4A6A801BD9F433006C794A /* GithubAPIClient.h */,
+				8E4A6A811BD9F433006C794A /* GithubAPIClient.m */,
+				8E4161201BDBF49F000F48D9 /* User.h */,
+				8E4161211BDBF49F000F48D9 /* User.m */,
+				8E4161231BDBF5D2000F48D9 /* Pasta.h */,
+				8E4161241BDBF5D2000F48D9 /* Pasta.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		8EC401901BD94E2D00E1686F = {
 			isa = PBXGroup;
 			children = (
 				8EC4019B1BD94E2D00E1686F /* CodePasta */,
 				8EC401B81BD94E2D00E1686F /* CodePastaTests */,
 				8EC4019A1BD94E2D00E1686F /* Products */,
+				007BBBBE89B2B6F69A668290 /* Pods */,
+				D9D28F9F217C71FFCBF6F882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,15 +168,12 @@
 		8EC4019B1BD94E2D00E1686F /* CodePasta */ = {
 			isa = PBXGroup;
 			children = (
+				8EC401A91BD94E2D00E1686F /* Storyboard.storyboard */,
 				8EC401A01BD94E2D00E1686F /* AppDelegate.h */,
 				8EC401A11BD94E2D00E1686F /* AppDelegate.m */,
-				8EC401A31BD94E2D00E1686F /* FirstViewController.h */,
-				8EC401A41BD94E2D00E1686F /* FirstViewController.m */,
-				8EC401A61BD94E2D00E1686F /* SecondViewController.h */,
-				8EC401A71BD94E2D00E1686F /* SecondViewController.m */,
-				8EC401A91BD94E2D00E1686F /* Main.storyboard */,
-				8EC401AC1BD94E2D00E1686F /* Images.xcassets */,
-				8EC401AE1BD94E2D00E1686F /* LaunchScreen.xib */,
+				8E290CF01BD9650500A68DE3 /* View Controllers */,
+				8E290CF11BD9657800A68DE3 /* Model */,
+				8ED8ECFB1BDCA79A00A99A14 /* Cutsom Views */,
 				8EC4019C1BD94E2D00E1686F /* Supporting Files */,
 			);
 			path = CodePasta;
@@ -101,6 +182,8 @@
 		8EC4019C1BD94E2D00E1686F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EC401AC1BD94E2D00E1686F /* Images.xcassets */,
+				8EC401AE1BD94E2D00E1686F /* LaunchScreen.xib */,
 				8EC4019D1BD94E2D00E1686F /* Info.plist */,
 				8EC4019E1BD94E2D00E1686F /* main.m */,
 			);
@@ -124,6 +207,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8ED8ECFB1BDCA79A00A99A14 /* Cutsom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8ED8ECFC1BDCA7C700A99A14 /* PushNoAnimationSegue.h */,
+				8ED8ECFD1BDCA7C700A99A14 /* PushNoAnimationSegue.m */,
+				8E156E661BDD328C0059F3FF /* PastaCell.xib */,
+				8EDC2A2F1BDD497300AB138C /* PastaCell.h */,
+				8EDC2A301BDD497300AB138C /* PastaCell.m */,
+				8EDC2A321BDD5B5F00AB138C /* LoadingCell.xib */,
+			);
+			name = "Cutsom Views";
+			sourceTree = "<group>";
+		};
+		D9D28F9F217C71FFCBF6F882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10B9A3FBCB9291FE676B5344 /* libPods-CodePasta.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EC401BF1BD94E2D00E1686F /* Build configuration list for PBXNativeTarget "CodePasta" */;
 			buildPhases = (
+				A38D21FB5CFD1D1570E11867 /* Check Pods Manifest.lock */,
 				8EC401951BD94E2D00E1686F /* Sources */,
 				8EC401961BD94E2D00E1686F /* Frameworks */,
 				8EC401971BD94E2D00E1686F /* Resources */,
+				AFDF5430992814A0FBD004E3 /* Embed Pods Frameworks */,
+				638CCA93A1843421A5FB0D1F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,9 +311,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC401AB1BD94E2D00E1686F /* Main.storyboard in Resources */,
+				8EC401AB1BD94E2D00E1686F /* Storyboard.storyboard in Resources */,
 				8EC401B01BD94E2D00E1686F /* LaunchScreen.xib in Resources */,
 				8EC401AD1BD94E2D00E1686F /* Images.xcassets in Resources */,
+				8EDC2A331BDD5B5F00AB138C /* LoadingCell.xib in Resources */,
+				8E156E671BDD328C0059F3FF /* PastaCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,15 +328,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		638CCA93A1843421A5FB0D1F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodePasta/Pods-CodePasta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38D21FB5CFD1D1570E11867 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFDF5430992814A0FBD004E3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodePasta/Pods-CodePasta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8EC401951BD94E2D00E1686F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC401A81BD94E2D00E1686F /* SecondViewController.m in Sources */,
+				8EDC2A3B1BDE2CAD00AB138C /* PostViewController.m in Sources */,
+				8EDC2A351BDD940600AB138C /* SecondViewController.m in Sources */,
+				8E4A6A821BD9F433006C794A /* GithubAPIClient.m in Sources */,
 				8EC401A21BD94E2D00E1686F /* AppDelegate.m in Sources */,
 				8EC401A51BD94E2D00E1686F /* FirstViewController.m in Sources */,
 				8EC4019F1BD94E2D00E1686F /* main.m in Sources */,
+				8ED8ECFE1BDCA7C700A99A14 /* PushNoAnimationSegue.m in Sources */,
+				8E290CF71BD9A26B00A68DE3 /* RegisterViewController.m in Sources */,
+				8EC401C71BD9514500E1686F /* LoginViewController.m in Sources */,
+				8E290CF41BD96A8C00A68DE3 /* Constants.m in Sources */,
+				8EDC2A381BDDAA1100AB138C /* CodeFileViewController.m in Sources */,
+				8E4161221BDBF49F000F48D9 /* User.m in Sources */,
+				8E4161251BDBF5D2000F48D9 /* Pasta.m in Sources */,
+				8EDC2A311BDD497300AB138C /* PastaCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,12 +417,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8EC401A91BD94E2D00E1686F /* Main.storyboard */ = {
+		8EC401A91BD94E2D00E1686F /* Storyboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8EC401AA1BD94E2D00E1686F /* Base */,
 			);
-			name = Main.storyboard;
+			name = Storyboard.storyboard;
 			sourceTree = "<group>";
 		};
 		8EC401AE1BD94E2D00E1686F /* LaunchScreen.xib */ = {
@@ -351,6 +518,7 @@
 		};
 		8EC401C01BD94E2D00E1686F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F94D10209165A3B63FC59A7E /* Pods-CodePasta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodePasta/Info.plist;
@@ -361,6 +529,7 @@
 		};
 		8EC401C11BD94E2D00E1686F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B6D59670A31097114525FF /* Pods-CodePasta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CodePasta/Info.plist;
@@ -422,6 +591,7 @@
 				8EC401C11BD94E2D00E1686F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EC401C21BD94E2D00E1686F /* Build configuration list for PBXNativeTarget "CodePastaTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +600,7 @@
 				8EC401C41BD94E2D00E1686F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

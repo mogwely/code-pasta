@@ -6,6 +6,8 @@ platform :ios, '8.0'
 target ‘CodePasta’ do
 pod 'AFNetworking', '~> 2.6'
 pod 'Parse', '~> 1.9'
+pod 'FontAwesome', '~> 4.3'
+pod 'DateTools'
 end
 
 target ‘CodePastaTests' do

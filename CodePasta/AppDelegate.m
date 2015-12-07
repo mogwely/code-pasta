@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "Constants.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,24 @@
     
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+
+    
+    //If user is not logged in
+    if (![PFUser currentUser])
+    {
+        UIViewController* rootController = [[UIStoryboard storyboardWithName: MAIN_STORYBOARD
+                                                                      bundle:[NSBundle mainBundle]]
+                                            instantiateViewControllerWithIdentifier: LOGIN_VIEW_CONTROLLER_IDENTIFIER];
+        
+        UINavigationController* navigation = [[UINavigationController alloc] initWithRootViewController:rootController];
+
+        self.window.rootViewController = navigation;
+
+    }
+    else
+    {
+        self.window.rootViewController = [[UIStoryboard storyboardWithName: MAIN_STORYBOARD bundle:[NSBundle mainBundle]] instantiateInitialViewController];
+    }
     
     return YES;
 }

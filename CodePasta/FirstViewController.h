@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *logoutBtn;
 
+- (IBAction)logoutBtnClicked:(UIButton *)sender;
 
 @end
 
